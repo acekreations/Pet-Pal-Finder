@@ -49,16 +49,84 @@
     <div class="uk-section uk-section-small">
       <div class="uk-container uk-container-xsmall">
         <h2 class="">Compatibility Survey</h2>
-        <form>
-          <label class="uk-form-label" for="pet-selection">Select Your Pet Type</label>
-          <select id="pet-selection" class="uk-select">
-              <option>Dog</option>
-              <option>Cat</option>
-              <option>Bunny</option>
-              <option>Bird</option>
-          </select>
+        <!-- Sign up form -->
+        <!-- <form id="signup-form">
+
           <label class="uk-form-label" for="pet-name">What's Your Pets Name?</label>
           <input id="pet-name" class="uk-input" type="text">
+          <button id="submit-signup" class="uk-button uk-button-primary">Start Your Search</button>
+        </form> -->
+
+        <!-- Survey form -->
+        <form id="survey-form">
+          <label class="uk-form-label" for="pet-name">What's Your Pets Name?</label>
+          <input id="pet-name" class="uk-input" type="text">
+
+          <label class="uk-form-label" for="q1">How active is your dog? (1 = very lazy, 5 = very energetic)</label>
+          <div class="uk-margin">
+            <div class="uk-flex uk-flex-between uk-text-center scale-values">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+            </div>
+            <input id="q1" class="uk-range" type="range" value="3" min="1" max="5" step="1">
+          </div>
+          <hr class="uk-divider-small">
+
+          <label class="uk-form-label" for="q2">How big is your dog? (1 = very small, 5 = very large)</label>
+          <div class="uk-margin">
+            <div class="uk-flex uk-flex-between uk-text-center scale-values">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+            </div>
+            <input id="q2" class="uk-range" type="range" value="3" min="1" max="5" step="1">
+          </div>
+          <hr class="uk-divider-small">
+
+          <label class="uk-form-label" for="q3">Does your dog like to play fetch? (1 = not at all, 5 = very much)</label>
+          <div class="uk-margin">
+            <div class="uk-flex uk-flex-between uk-text-center scale-values">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+            </div>
+            <input id="q3" class="uk-range" type="range" value="3" min="1" max="5" step="1">
+          </div>
+          <hr class="uk-divider-small">
+
+          <label class="uk-form-label" for="q4">Does your dog like dog parks? (1 = not at all, 5 = very much)</label>
+          <div class="uk-margin">
+            <div class="uk-flex uk-flex-between uk-text-center scale-values">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+            </div>
+            <input id="q4" class="uk-range" type="range" value="3" min="1" max="5" step="1">
+          </div>
+          <hr class="uk-divider-small">
+
+          <label class="uk-form-label" for="q5">Does your dog like long or short walks? (1 = short, 5 = long)</label>
+          <div class="uk-margin">
+            <div class="uk-flex uk-flex-between uk-text-center scale-values">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+            </div>
+            <input id="q5" class="uk-range" type="range" value="3" min="1" max="5" step="1">
+          </div>
+          <hr class="uk-divider-small">
+
           <button id="submit-signup" class="uk-button uk-button-primary">Start Your Search</button>
         </form>
       </div>
