@@ -19,7 +19,7 @@ Dog Pal Finder is the best way to find your furry best friend a furry best frien
 ## API
 Dog Pal Finder includes an easy to use API.
 
-Endpoint: '/api/pals'
+Endpoint: `/api/pals`
 
 This endpoint will return a json object that includes the entire dataset that Dog Pal Finder has.
 
