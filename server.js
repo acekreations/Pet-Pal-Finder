@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 app.use(express.static('app/public/assets'));
 
 //Routes
-require("./app/routes/htmlRoutes.js")(app);
 require("./app/routes/apiRoutes.js")(app);
+require("./app/routes/htmlRoutes.js")(app);
 
 
 

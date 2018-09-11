@@ -1,6 +1,7 @@
 //Dependencies
 var path = require("path");
 var pals = require("../data/pals");
+var request = require("request");
 
 //Code to be exported
 module.exports = function(app){
@@ -30,8 +31,15 @@ module.exports = function(app){
         topMatchId = i;
       }
     }
+    var query = "https://api.unsplash.com/photos/random/?client_id=1cef58c217f78080641b0747a94a8ad92f74893d4f4525c89a25174a4462ee3e&query=dog&count=1";
+    request(query, function(err, response){
+      if (err) throw err;
+      response = JSON.parse(response.body);
+      var img = response[0].urls.thumb;
+      newPal.img = img;
 
-    pals.push(newPal);
+      pals.push(newPal);
+    });
 
     return res.json(pals[topMatchId]);
 
