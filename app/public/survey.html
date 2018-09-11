@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-
+    <!-- slideshow container -->
     <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 4000; pause-on-hover: false; velocity: 0.5;">
-
+        <!-- slideshow -->
         <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 70;">
             <li>
                 <img src="/images/1.jpg" alt="" uk-cover>
@@ -35,6 +35,7 @@
             </li>
         </ul>
 
+        <!-- title overlay -->
         <div class="uk-position-center">
           <div class="uk-container uk-text-center">
             <h1 class="">Dog Pal Finder</h1>
@@ -43,13 +44,17 @@
 
     </div>
 
+    <!-- content container -->
     <div class="uk-section uk-section-small">
       <div class="uk-container uk-container-xsmall">
         <h2 class="">Compatibility Survey</h2>
         <!-- Survey form -->
         <form id="survey-form">
+          <!-- name input -->
           <label class="uk-form-label" for="pet-name">What's Your Dogs Name?</label>
           <input id="pet-name" class="uk-input uk-margin-medium-bottom" type="text">
+
+          <!-- questions -->
 
           <label class="uk-form-label" for="q1">How active is your dog? (1 = very lazy, 5 = very energetic)</label>
           <div class="uk-margin">
